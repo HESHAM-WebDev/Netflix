@@ -1,0 +1,13 @@
+{%extends 'main/base_layout.html'%}
+{%block main-content%}
+<div class="container mt-5">
+    <div class="row">
+        <form method="post" action="{%url 'signup'%}">
+            {%csrf_token%}
+            {{form.as_p}}
+            <button type="submit" class="btn btn-primary" >Rigster</button>
+
+        </form>
+    </div>
+</div>
+{%endblock%}

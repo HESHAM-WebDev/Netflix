@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="{%static 'main/css/bootstrap.css'%}" rel="stylesheet">
+    <scrip src="{%static 'main/js/bootstrap.js'%}"></scrip>
+    <title>{%block title%}TODO INDEX {%endblock%}</title>
+</head>
+<body>
+<!--<img src="{%static 'main/imgs/plan.jpg'%}" class="img-thumbnail 100" alt="">-->
+{% include 'main/header.html' %}
+<!--<a href="{%url 'todo:todo-index'%}">TODO INDEX</a>-->
+<!--<br>-->
+<!--<a href="{%url 'todo:todo-list'%}">TODO LIST</a>-->
+<!--<br>-->
+{% block main-content %}
+
+<li>you need to over ride you block</li>
+
+{%endblock%}
+<br>
+
+{% include 'main/footer.html' %}
+
+</body>
+</html>
